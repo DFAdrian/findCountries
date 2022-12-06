@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=EB+Garamond:ital@0;1&family=Inconsolata:wght@300&family=Inter:wght@300;400;700&family=Oswald&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Countries</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="nav">
+        <h1 class="nav__title">Countries</h1>
+        <div class="preference">
+            <input type="checkbox" id="check" class="preference__input">
+            <label for="check" class="preference__label" id="checkLabel"></label>
+            <span class="preference__txt">Dark Mode</span>
+        </div>
+    </nav>
+        <!-- search bar and select input-->
+    <section class="pick-section">
+        <div class="search-field">
+            <button class="search-field__btn">
+                <img src="./assets/search-icon.png" class="search-field__img">
+            </button>
+            <input class="search-field__input" placeholder="Search for a country" type="text" id="search-input">
+        </div>
+        <select class="pick-section__select" id="select">
+            <option value="regions">Filter by region</option>
+            <option value="americas">Americas</option>
+            <option value="oceania">Oceania</option>
+            <option value="africa">Africa</option>
+            <option value="antarctic">Antarctic</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+        </select>
+    </section>
+    <section id="cards-section" class="cards" >
+        
+    </section>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>
